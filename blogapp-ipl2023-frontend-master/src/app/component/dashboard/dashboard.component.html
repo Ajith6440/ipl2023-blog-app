@@ -1,0 +1,22 @@
+<div class="container">
+    <br>
+    
+    <button class="btn btn-primary float-end " (click)="logout()">Logout</button>
+<div class="jumbotron">
+    <h1 class="display-4">Welcome {{userName}}!</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <br>
+    
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/manage-posts" role="button">Manage Posts</a>&nbsp;
+      <a class="btn btn-primary btn-lg" href="/manage-comments" role="button">Manage Comments</a>&nbsp;
+      <a class="btn btn-primary btn-lg" href="/manage-users" role="button" *ngIf="role=='ADMIN'">Manage Users</a>&nbsp;
+      
+
+    </p>
+  </div>
+  <br><br><br>
+  <br><br><br>
+  <br>
+</div>

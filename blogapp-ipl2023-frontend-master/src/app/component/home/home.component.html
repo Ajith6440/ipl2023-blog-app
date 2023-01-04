@@ -1,0 +1,36 @@
+<body>
+  <div class="container mt-3">
+    <h1>IPL 2023</h1>
+    <div class="mt-4 p-5 bg-primary text-white rounded" style="
+    background-image: url('assets/WhatsApp Image 2023-01-02 at 15.53.46.jpg');
+    height:249px;width:1280px;
+    "> 
+    </div>
+  </div>
+<br/>
+<div class="container mt-3">
+<h1>Indian Premier League-2023</h1> 
+      <p>The 2023 Indian Premier League, also known as IPL 16 or, for sponsorship reasons, Tata IPL 2023, will be the sixteenth season of the Indian Premier League (IPL), a professional Twenty20 cricket league established by the Board of Control for Cricket in India (BCCI) in 2007.[1] Gujarat Titans are the defending champions.</p>
+    </div>
+      <div class="container">
+    
+<div class="row">    
+
+
+  <div class="card" style="width: 16rem;" *ngFor="let post of posts">
+    <img class="card-img-top" src="data:image/png;base64,{{post.postImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{post.postTitle}}</h4>
+     <p class="content">{{post.postContent | slice : 0 :75 }}...</p>
+      <a href="/post/{{post.postId}}" class="btn btn-primary btn-sm ">Read More</a>
+    </div>
+    
+  </div>
+
+  
+  
+ 
+</div>
+</div>
+<br/>
+</body>
